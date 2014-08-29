@@ -1,0 +1,126 @@
+@font-face{
+  font-family:"myriad";
+src:url(myriad.otf);
+}
+.header {
+  position: relative;
+  border: solid red 1px;
+  background-image: url(http://www.creationsciencetoday.com/_images/11-Mont-Blanc-lrg.jpg);
+  width: 100%;
+  height: 522px;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #046BB0;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+}
+
+.very-top {
+  position: relative;
+  display: inline-block;
+  border: solid blue 1px;
+  height: 30px;
+  width: 100%;
+  font-family: "myriad";
+}
+
+
+.header-text-container {
+  border: solid green 1px;
+  position: absolute;
+  color: white;
+  z-index: 10;
+  font-family: "myriad";
+  width: 100%;
+  text-align: center;
+  top: 0;
+  margin: 0;
+
+}
+
+.header-text {
+  border: solid red 1px;
+  font-size: 76px;
+  margin: 195px 0 0 0;
+}
+
+.header-sub-text {
+  border: solid red 1px;
+  font-size: 11px;
+}
+
+     /*MIDDLE SECTION*/
+
+
+.middle-container {
+  border: solid red 1px;
+}
+
+.main-text {
+  width: 70%;
+  border: solid green 3px;
+  display: inline-block;
+}
+
+.first-bit {
+  border: solid blue 1px;
+
+}
+
+.text1 {
+  border:solid blue 1px;
+}
+
+.radical {
+  border: solid blue 1px;
+}
+
+.text2 {
+  border: solid blue 1px;
+}
+
+.text-interaction {
+  border: solid blue 1px;
+}
+
+.read-comments {
+  border: solid blue 1px;
+}
+
+.read-later {
+  border: solid blue 1px;
+}
+
+.share-this-post {
+  border: solid blue 1px;
+}
+
+.sidebar {
+  width: 20%;
+  border: solid purple 3px;
+  display: inline-block;
+}
+
+.Anne-Marie-social {
+  border: solid blue 1px;
+}
+
+.advert {
+  border: solid blue 1px;
+}
+
+.sidebar-text {
+  border: solid blue 1px;
+}
+
+.middle-footer {
+  border: solid red 1px;
+
+}
