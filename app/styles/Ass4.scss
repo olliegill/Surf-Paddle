@@ -1,0 +1,661 @@
+@font-face{
+  font-family: 'myriad';
+  src:url(myriad.otf);
+}
+
+$overlay-blue: #046bb0;
+$primary-blue: #003353;
+$secondary-blue: #0069b6;
+$dark-grey: #5c6870;
+$light-grey: #a0b360;
+$small-border-color: #fafafa;
+$header-color: #ffffff;
+
+$primary-font: 'myriad';
+$secondary-font: 'Open-sans', sans-serif;
+$tertiary-font: 'Oswald', sans-serif;
+
+$large-font-size: 60px;
+$small-font-size: 12px;
+
+body {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  background-image: url(http://www.creationsciencetoday.com/_images/11-Mont-Blanc-lrg.jpg);
+  width: 100%;
+  height: 524px;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  background-color: $overlay-blue;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+}
+
+.very-top {
+  height: 50px;
+  width: 1004px;
+  margin: 0 141px 0 136px;
+  padding: 7px 0 0;
+  font-family: $primary-font;
+  vertical-align: middle;
+}
+
+   /* STUFF AT THE VERY TOP */
+
+.wave-image {
+  display: inline-block;
+  color: $primary-blue;
+  z-index: 10;
+  top: 0;
+}
+
+.blog {
+  font-size: $small-font-size+6;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 6px;
+}
+
+.about {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  font-size: $small-font-size+7;
+  height: 60px;
+  margin: 10px 0 0 5px;
+
+  a {
+    text-decoration: none;
+    color: $primary-blue;
+    z-index: 10;
+}
+}
+
+.about img {
+  vertical-align: middle;
+
+}
+
+.search {
+  display: inline-block;
+  float: right;
+}
+
+.header-text-container {
+  position: absolute;
+  color: $header-color;
+  z-index: 10;
+  font-family: $primary-font;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  margin: 0;
+
+}
+
+.header-text {
+  font-size: $large-font-size *4-10;
+  margin: 205px 0 0;
+  font-weight: normal;
+  letter-spacing: 0;
+  height: 108px;
+
+  -webkit-animation-name: headerfade;
+  -moz-animation-name: headerfade;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+
+  }
+
+@-webkit-keyframes headerfade {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.header-sub-text {
+  font-size: $small-font-size +5;
+  margin: 0 9px 0 0;
+  font-weight: normal;
+  color: $primary-blue;
+
+}
+
+     /*MIDDLE SECTION*/
+
+
+.middle-container {
+  margin: 2px 0 0 2px;
+  width: 100%;
+}
+
+.bulk-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main-text {
+  top: 0;
+  width: 614px;
+  display: inline-block;
+  margin: 0 0 0 162px;
+}
+
+
+
+.middle-header {
+  font-size: $large-font-size +4;
+  font-family: $tertiary-font;
+  margin: 60px 0 0;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-weight: lighter;
+  color: $primary-blue;
+  height: 138px;
+}
+
+.old-man-small-image {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $secondary-font;
+  font-size: $small-font-size +1;
+  text-align: right;
+  height: 25px;
+  width: 98px;
+  margin: 4px 0 3px;
+  color: $primary-blue;
+}
+
+.old-man-small {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  border-radius: 11px;
+  padding: 1px 3px 0 0;
+  z-index: 0;
+
+  div {
+    position: absolute;
+    border: solid $overlay-blue 1px;
+    width: 21px;
+    height:21px;
+    border-radius: 11px;
+    padding: 0 3px 0 0;
+    background-color: $overlay-blue;
+    opacity: 0.5;
+    z-index: 1;
+
+    div:hover {
+      background: none;
+      border: none;
+      transition-duration: 1s;
+    }
+  }
+}
+
+.date {
+  display: inline-block;
+  color: $light-grey;
+  font-family: $secondary-font;
+  font-size: 14px;
+  margin: 0 0 0 12px;
+
+  a {
+    color: $light-grey;
+
+    a:hover {
+      color: $secondary-blue;
+      transition-duration: 1s;
+   }
+ }
+}
+
+.text1 {
+  font-family: $secondry-font;
+  padding: 15px 0 0;
+  line-height: 1.6;
+  color: $dark-grey;
+
+  a {
+    color: $light-grey;
+
+    a:hover {
+      color: $secondary-blue;
+      transition-duration: 1s;
+   }
+  }
+}
+
+.radical {
+  vertical-align: middle;
+  height: 56px;
+  font-size: 25px;
+  font-family: $primary-font;
+  color: $secondary-blue;
+  margin: 35px 0 0 5px;
+  padding: 0 0 0 18px;
+  font-weight: 500;
+  border-left: solid $light-grey 2px;
+  left: 20px;
+
+  h1 {
+    padding: 9px 0 0 1px;
+   }
+ }
+
+.text2 {
+  height: 339px;
+  font-family: $secondary-font;
+  padding: 6px 0 0;
+  line-height: 1.6;
+  color: $dark-grey;
+
+  a {
+    color: $light-grey;
+
+    a:hover {
+      color: $secondary-blue;
+      transition-duration: 1s;
+    }
+  }
+}
+
+.text-interaction {
+  display: inline-block;
+  margin: 4px 0 0;
+
+  a {
+    text-decoration: none;
+    color: $header-color;
+
+    a:hover {
+      background-color: $secondary-blue;
+      transition-duration: 1s;
+    }
+  }
+ }
+
+.image-links {
+  display: inline-block;
+  background-color: $dark-grey;
+  width: 33px;
+  height: 30px;
+  vertical-align: middle;
+  text-decoration: none;
+
+  :hover {
+    background-color: $secondary-blue;
+    transition-duration: 1s;
+  }
+}
+
+.text-links {
+  vertical-align: middle;
+  display: inline-block;
+  background-color: $light-grey;
+  text-decoration: none;
+  color: $header-color;
+  font-family: $primary-font;
+  font-size: $small-font-size +3;
+  text-align: center;
+
+  :hover {
+    background-color: $secondary-blue;
+    transition-duration: 1s;
+
+  }
+}
+
+   /* READ COMMENTS */
+
+.read-comments {
+  background-color: $light-grey;
+  display: inline-block;
+  height: 30px;
+  width: 158px;
+  margin: 2px 5px 0 2px;
+  font-family: $primary-font;
+
+  :hover {
+    background-color: $secondary-blue;
+    transition-duration: 1s;
+  }
+
+}
+
+  /* READ LATER */
+
+.read-later {
+  background-color: $light-grey;
+  display: inline-block;
+  height: 30px;
+  width: 128px;
+  margin: 0 6px 0 0;
+  font-family: $primary-font;
+
+  :hover {
+    background-color: $secondary-blue;
+    transition-duration: 1s;
+  }
+}
+
+  /* SHARE THIS POST */
+
+.share-this-post {
+  background-color: $light-grey;
+  display: inline-block;
+  height: 30px;
+  width: 154px;
+  font-family: $primary-font;
+
+  :hover {
+    background-color: $secondary-blue;
+    transition-duration: 1s;
+  }
+}
+
+   /* SIDEBAR */
+
+.sidebar {
+  width: 279px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 80px 0 0 79px;
+}
+
+   /* SOCIAL LINKS */
+
+.anne-marie-social {
+  font-size: $small-font-size +5;
+  font-family: $primary-font;
+  color: $secondary-blue;
+
+  p {
+    margin: 7px 0 1px 93px;
+  }
+}
+
+.old-man-large {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border-radius: 42px;
+  margin: 0 0 0 97px;
+  z-index: 0;
+}
+
+.old-man-large-div {
+  position: absolute;
+  border: solid $overlay-blue 1px;
+  width: 83px;
+  height:83px;
+  border-radius: 42px;
+  margin: 0 0 0 97px;
+  background-color: $overlay-blue;
+  opacity: .5;
+  z-index: 1;
+
+  :hover {
+    background: none;
+    border: 0;
+    transition-duration: 1s;
+  }
+}
+
+.social-links {
+  color: $light-grey;
+  font-family: $secondary-font;
+  font-size: $small-font-size +2;
+  margin: 0 0 52px 42px;
+
+  a {
+    text-decoration: none;
+    color: $light-grey;
+
+    a:hover {
+      color: $secondary-blue;
+      transition-duration: 1s;
+    }
+  }
+}
+
+.twitter {
+  padding: 0 11px 0 0;
+  margin: 0 5px 0 0;
+  border-right: solid $small-border-color 2px;
+}
+
+.facebook {
+  padding: 0 3px 0 0;
+  border-right: solid $small-border-color 2px;
+
+}
+
+    /* ADVERT */
+
+.advert {
+  position: relative;
+  height: 323px;
+
+  img {
+    margin-bottom: 5px;
+  }
+}
+.advert-div {
+  position: absolute;
+  height: 299px;
+  width: 278px;
+  z-index: 1;
+  background-color: $overlay-blue;
+  opacity: .5;
+
+  :hover {
+    background: none;
+    transition-duration: 1s;
+    transition-delay: .5s;
+  }
+}
+
+.advert-image {
+  position: relative;
+  margin: 1px 0 4px;
+  z-index: 0;
+
+.about-this-ad {
+  color: $light-grey;
+  font-family: $secondary-font;
+  font-size: $small-fontsize +2;
+  margin: 0 0 0 191px;
+
+  :hover {
+    color: $secondary-blue;
+    transition-duration: 1s;
+    }
+  }
+}
+
+
+.sidebar-section-heading {
+  font-family: $tertiary-font;
+  color: $seconddary-font;
+  font-size: $small-font-size +6;
+  margin: 46px 0 0;
+
+}
+
+.sidebar-text p {
+  font-family: $secondary-font;
+  color: $light-grey;
+  font-size: $small-font-size +1;
+  margin: 7px 0 0;
+  line-height: 1.9;
+
+  a {
+    color: $light-grey;
+
+    a:hover {
+      color: $secondary-blue;
+      transition-duration: 1s;
+    }
+  }
+}
+
+.middle-footer {
+  border-top: solid $light-grey 2px;
+  margin: 68px 0 29px;
+  padding: 0 138px 0 0;
+}
+
+.most-popular-posts {
+  font-size: $large-font-size +1;
+  font-family: $tertiary-font;
+  color: $primary-blue;
+  text-align: center;
+  margin: 24px 0 0 137px;
+}
+
+  /* BOTTOM BIT */
+
+.four-images-section {
+  position: relative;
+  width: 100%;
+  height: 330px;
+
+  span {
+    position: absolute;
+    font-family: $tertiary-font;
+    font-size: $small-font-size +8;
+    color: $primary-blue;
+    z-index: 1;
+
+    img {
+      width: 325px;
+      height: 330px;
+      opacity: .7;
+      z-index: 0;
+  }
+ }
+}
+
+.imagea {
+  display: inline-block;
+  background-color: $overlay-blue;
+  z-index: 0;
+  height: 330px;
+
+  :hover {
+    background: none;
+    opacity: 1;
+    transition-duration: 1s;
+ }
+}
+
+.image {
+  float: left;
+  position: relative;
+
+}
+
+.another {
+  margin: 280px 0 0 16px;
+}
+
+.post {
+  margin: 280px 0 0 16px;
+}
+
+.heresanother {
+  margin: 240px 0 0 17px;
+}
+
+.longer {
+  margin: 277px 0 0 17px;
+}
+
+.ohcool {
+  margin: 280px 0 0 19px;
+}
+
+
+     /* FOOTER */
+
+.footer {
+  width: 100%;
+  height: 96px;
+  background-color: $primary-blue;
+}
+
+.TIY {
+  position: relative;
+  display: inline-block;
+  height: 96px;
+  width: 50%;
+
+}
+
+.TIY-logo {
+  vertical-align: middle;
+  margin: 11px 0 0 151px;
+}
+
+.copyright {
+  float: right;
+  color: $light-grey;
+  font-family: $secondary-font;
+  font-size: $small-font-size +1;
+  padding: 38px 142px 0 0;
+}
+
+.navs {
+  position: relative;
+  display: inline-block;
+  color: $light-grey;
+  font-size: $small-font-size +2;
+  vertical-align: top;
+  margin: 37px 0 0 165px;
+
+  a {
+    text-decoration: none;
+    color: $light-grey;
+    font-family: $secondary-font;
+  }
+}
+
+.nav1 {
+  border-right: solid $small-border-color 1px;
+  margin: 0 6px 0 0;
+  padding: 0 6px 0 0;
+}
+
+.nav2 {
+  border-right: solid $small-border-color 1px;
+  margin: 0 5px 0 0;
+  padding: 0 6px 0 0;
+}
+
+.nav3 {
+  border-right: solid $small-border-color 1px;
+  margin: 0 5px 0 0;
+  padding: 0 7px 0 0;
+
+}
