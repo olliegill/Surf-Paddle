@@ -9,7 +9,7 @@ $secondary-blue: #0069b6;
 $dark-grey: #5c6870;
 $light-grey: #a0b360;
 $small-border-color: #fafafa;
-$header-color: #ffffff;
+$header-color: #fff;
 
 $primary-font: 'myriad';
 $secondary-font: 'Open-sans', sans-serif;
@@ -17,6 +17,22 @@ $tertiary-font: 'Oswald', sans-serif;
 
 $large-font-size: 60px;
 $small-font-size: 12px;
+
+@mixin animation-duration($animation-duration) {
+
+  -webkit-animation-name: headerfade;
+  -moz-animation-name: headerfade;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+}
+
+@mixin overlay-fade($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
 
 body {
   margin: 0;
@@ -50,7 +66,7 @@ body {
   vertical-align: middle;
 }
 
-   /* STUFF AT THE VERY TOP */
+   //* STUFF AT THE VERY TOP *//
 
 .wave-image {
   display: inline-block;
@@ -82,12 +98,11 @@ body {
     text-decoration: none;
     color: $primary-blue;
     z-index: 10;
-}
-}
 
-.about img {
-  vertical-align: middle;
-
+    img {
+      vertical-align: middle;
+    }
+  }
 }
 
 .search {
@@ -108,16 +123,13 @@ body {
 }
 
 .header-text {
-  font-size: $large-font-size *4-10;
+  font-size: $large-font-size *2-10;
   margin: 205px 0 0;
   font-weight: normal;
   letter-spacing: 0;
   height: 108px;
+  @include animation-duration(2s);
 
-  -webkit-animation-name: headerfade;
-  -moz-animation-name: headerfade;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
 
   }
 
@@ -141,7 +153,7 @@ body {
 
 }
 
-     /*MIDDLE SECTION*/
+     //*MIDDLE SECTION*//
 
 
 .middle-container {
@@ -202,13 +214,13 @@ body {
     border-radius: 11px;
     padding: 0 3px 0 0;
     background-color: $overlay-blue;
-    opacity: 0.5;
+    opacity: .5;
     z-index: 1;
 
     div:hover {
-      background: none;
-      border: none;
-      transition-duration: 1s;
+      background: 0;
+      border: 0;
+      @include overlay-fade(all, 1s ease-out);
     }
   }
 }
