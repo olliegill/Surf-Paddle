@@ -1,0 +1,567 @@
+@font-face {
+  font-family: 'myriad';
+  src: url(myriad.otf); }
+
+$overlay-blue: #046bb0;
+$primary-blue: #003353;
+$secondary-blue: #0069b6;
+$dark-grey: #5c6870;
+$light-grey: #a3b3bf;
+$small-border-color: #fafafa;
+$header-color: #fff;
+
+$primary-font: 'myriad';
+$secondary-font: 'Open-sans', sans-serif;
+$tertiary-font: 'Oswald', sans-serif;
+
+$large-font-size: 60px;
+$small-font-size: 12px;
+
+body {
+  margin: 0; }
+
+.header {
+  position: relative;
+  background-image: url('http://www.creationsciencetoday.com/_images/11-Mont-Blanc-lrg.jpg');
+  width: 100%;
+  height: 524px;
+  z-index: 0; }
+
+.overlay {
+  position: absolute;
+  background-color: $overlay-blue;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .5; }
+
+.very-top {
+  height: 50px;
+  width: 1004px;
+  margin: 0 141px 0 136px;
+  padding: 7px 0 0;
+  font-family: $primary-font;
+  vertical-align: middle; }
+
+/* STUFF AT THE VERY TOP */
+.wave-image {
+  display: inline-block;
+  color: #003352;
+  z-index: 10;
+  top: 0; }
+
+.blog {
+  font-size: 18px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 6px 0; }
+
+.about {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  font-size: 19px;
+  height: 60px;
+  margin: 10px 0 0 5px; }
+
+.about a {
+  text-decoration: none;
+  color: #003352;
+  z-index: 10; }
+
+.about img {
+  vertical-align: middle; }
+
+.search {
+  border: solid green 1px;
+  display: inline-block;
+  float: right; }
+
+.search-image {
+  border: solid green 1px;
+  display: inline-block;
+  float: right; }
+
+.header-text-container {
+  position: absolute;
+  color: white;
+  z-index: 10;
+  font-family: "myriad";
+  width: 100%;
+  text-align: center;
+  top: 0;
+  margin: 0; }
+
+.header-text {
+  font-size: 110px;
+  margin: 205px 0 0 0;
+  font-weight: normal;
+  letter-spacing: 0px;
+  height: 108px; }
+
+.header-text {
+  -webkit-animation-name: headerfade;
+  -moz-animation-name: headerfade;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s; }
+
+@-webkit-keyframes headerfade {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+.header-sub-text {
+  font-size: 17px;
+  margin: 0 9px 0 0;
+  font-weight: normal;
+  color: #003352; }
+
+/*MIDDLE SECTION*/
+.middle-container {
+  width: 100%;
+  margin: 2px 0 0 2px; }
+
+.bulk-container {
+  width: 100%;
+  margin: 0 auto 0 auto; }
+
+.main-text {
+  top: 0;
+  width: 614px;
+  display: inline-block;
+  margin: 0 0 0 162px;
+  padding: 0 0 0 0; }
+
+.middle-header {
+  font-size: 64px;
+  font-family: 'Oswald', sans-serif;
+  margin: 60px 0 0 0;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-weight: lighter;
+  color: #003353;
+  height: 138px; }
+
+.old-man-small-image {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 13px;
+  text-align: right;
+  height: 25px;
+  width: 98px;
+  margin: 4px 0 3px 0;
+  color: #003353; }
+
+.old-man-small {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  border-radius: 11px;
+  padding: 1px 3px 0 0;
+  z-index: 0; }
+
+.old-man-small-div {
+  position: absolute;
+  border: solid #046BB0 1px;
+  width: 21px;
+  height: 21px;
+  border-radius: 11px;
+  padding: 0 3px 0 0;
+  background-color: #046BB0;
+  opacity: 0.5;
+  z-index: 1; }
+
+.old-man-small-div:hover {
+  background: none;
+  border: none;
+  transition-duration: 1s; }
+
+.date {
+  display: inline-block;
+  color: #A0B3C0;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 14px;
+  margin: 0 0 0 12px; }
+
+.date a {
+  color: #A0B3C0; }
+
+.date a:hover {
+  color: #0069B6;
+  transition-duration: 1s; }
+
+.text1 {
+  font-family: 'Open-sans', sans-serif;
+  padding: 15px 0 0 0;
+  line-height: 1.6;
+  color: #5C6870; }
+
+.text1 a {
+  color: #A0B3C0; }
+
+.text1 a:hover {
+  color: #0069B6;
+  transition-duration: 1s; }
+
+.radical {
+  vertical-align: middle;
+  height: 56px;
+  font-size: 25px;
+  font-family: "myriad";
+  color: #0069B6;
+  margin: 35px 0 0 5px;
+  padding: 0 0 0 18px;
+  font-weight: 500;
+  border-left: solid #A0B3C0 2px;
+  left: 20px; }
+
+.radical h1 {
+  padding: 9px 0 0 1px; }
+
+.text2 {
+  height: 339px;
+  font-family: 'Open-sans', sans-serif;
+  padding: 6px 0 0 0;
+  line-height: 1.6;
+  color: #5C6870; }
+
+.text2 a {
+  color: #A0B3C0; }
+
+.text2 a:hover {
+  color: #0069B6;
+  transition-duration: 1s; }
+
+.text-interaction {
+  display: inline-block;
+  margin: 4px 0 0 0; }
+
+.text-interaction a {
+  text-decoration: none;
+  color: white; }
+
+.text-interaction a:hover {
+  background-color: #0069B6;
+  transition-duration: 1s; }
+
+.image-links {
+  display: inline-block;
+  background-color: #5C6870;
+  width: 33px;
+  height: 30px;
+  vertical-align: middle;
+  text-decoration: none; }
+
+.image-links:hover {
+  background-color: #0069B6;
+  transition-duration: 1s; }
+
+.text-links {
+  vertical-align: middle;
+  display: inline-block;
+  background-color: #A0B3C0;
+  text-decoration: none;
+  color: white;
+  font-family: "myriad";
+  font-size: 15px;
+  text-align: center; }
+
+.text-links:hover {
+  background-color: #0069B6;
+  transition-duration: 1s; }
+
+/* READ COMMENTS */
+.read-comments {
+  background-color: #A0B3C0;
+  display: inline-block;
+  height: 30px;
+  width: 158px;
+  margin: 2px 5px 0 2px;
+  font-family: "myriad"; }
+
+.read-comments:hover {
+  background-color: #0069B6;
+  transition-duration: 1s; }
+
+/* READ LATER */
+.read-later {
+  background-color: #A0B3C0;
+  display: inline-block;
+  height: 30px;
+  width: 128px;
+  margin: 0 6px 0 0;
+  font-family: "myriad"; }
+
+.read-later:hover {
+  background-color: #0069B6;
+  transition-duration: 1s; }
+
+/* SHARE THIS POST */
+.share-this-post {
+  background-color: #A0B3C0;
+  display: inline-block;
+  height: 30px;
+  width: 154px;
+  font-family: "myriad"; }
+
+.share-this-post:hover {
+  background-color: #0069B6;
+  transition-duration: 1s; }
+
+/* SIDEBAR */
+.sidebar {
+  width: 279px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 80px 0 0 79px; }
+
+/* SOCIAL LINKS */
+.Anne-Marie-social {
+  font-size: 17px;
+  font-family: "myriad";
+  color: #0069B6; }
+
+.Anne-Marie-social p {
+  margin: 7px 0 1px 93px; }
+
+.old-man-large {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border-radius: 42px;
+  margin: 0 0 0 97px;
+  z-index: 0; }
+
+.old-man-large-div {
+  position: absolute;
+  border: solid #046BB0 1px;
+  width: 83px;
+  height: 83px;
+  border-radius: 42px;
+  margin: 0 0 0 97px;
+  background-color: #046BB0;
+  opacity: 0.5;
+  z-index: 1; }
+
+.old-man-large-div:hover {
+  background: none;
+  border: none;
+  transition-duration: 1s; }
+
+.social-links {
+  color: #A0B3C0;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 14px;
+  margin: 0 0 52px 42px; }
+
+.social-links a {
+  text-decoration: none;
+  color: #A0B3C0; }
+
+.social-links a:hover {
+  color: #0069B6;
+  transition-duration: 1s; }
+
+.Twitter {
+  padding: 0 11px 0 0;
+  margin: 0 5px 0 0;
+  border-right: solid #FAFAFA 2px; }
+
+.Facebook {
+  padding: 0 3px 0 0;
+  border-right: solid #FAFAFA 2px; }
+
+/* ADVERT */
+.advert {
+  position: relative;
+  height: 323px; }
+
+.advert-div {
+  position: absolute;
+  height: 299px;
+  width: 278px;
+  z-index: 1;
+  background-color: #046BB0;
+  opacity: 0.5; }
+
+.advert-div:hover {
+  background: none;
+  transition-duration: 1s;
+  transition-delay: 0.5s; }
+
+.advert-image {
+  position: relative;
+  margin: 1px 0 4px 0;
+  z-index: 0; }
+
+.advert img {
+  margin-bottom: 5px; }
+
+.About-This-Ad {
+  color: #A0B3C0;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 14px;
+  margin: 0 0 0 191px; }
+
+.About-This-Ad:hover {
+  color: #0069B6;
+  transition-duration: 1s; }
+
+.sidebar-section-heading {
+  font-family: 'Oswald', sans-serif;
+  color: #0069B6;
+  font-size: 18px;
+  margin: 46px 0 0 0; }
+
+.sidebar-text p {
+  font-family: 'Open-sans', sans-serif;
+  color: #A0B3C0;
+  font-size: 13px;
+  margin: 7px 0 0 0;
+  line-height: 1.9; }
+
+.sidebar-text > p > a {
+  color: #A0B3C0; }
+
+.sidebar-text > p > a:hover {
+  color: #0069B6;
+  transition-duration: 1s; }
+
+.middle-footer {
+  border-top: solid #E2E9EC 2px;
+  margin: 68px 0 29px 0;
+  padding: 0 138px 0 0; }
+
+.most-popular-posts {
+  font-size: 61px;
+  font-family: 'Oswald', sans-serif;
+  color: #003353;
+  text-align: center;
+  margin: 24px 0 0 137px; }
+
+/* BOTTOM BIT */
+.four-images-section {
+  position: relative;
+  width: 100%;
+  height: 330px; }
+
+.four-images-section img {
+  width: 325px;
+  height: 330px;
+  opacity: 0.7;
+  z-index: 0; }
+
+.imagea {
+  display: inline-block;
+  background-color: #046BB0;
+  z-index: 0;
+  height: 330px; }
+
+.imagea:hover {
+  background: none;
+  opacity: 1;
+  transition-duration: 1s; }
+
+.image1 {
+  position: relative;
+  float: left; }
+
+.image2 {
+  display: inline-block;
+  position: relative;
+  float: left; }
+
+.image3 {
+  display: inline-block;
+  position: relative;
+  float: left; }
+
+.image4 {
+  display: inline-block;
+  position: relative;
+  float: left; }
+
+.four-images-section > div > a > span {
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #003353;
+  z-index: 1;
+  font-size: 30px; }
+
+.another {
+  margin: 280px 0 0 16px; }
+
+.post {
+  margin: 280px 0 0 16px; }
+
+.heresanother {
+  margin: 240px 0 0 17px; }
+
+.longer {
+  margin: 277px 0 0 17px; }
+
+.ohcool {
+  margin: 280px 0 0 19px; }
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 96px;
+  background-color: #003353; }
+
+.TIY {
+  position: relative;
+  display: inline-block;
+  height: 96px;
+  width: 50%; }
+
+.TIY-logo {
+  vertical-align: middle;
+  margin: 11px 0 0 151px; }
+
+.copyright {
+  float: right;
+  color: #A0B3C0;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 13px;
+  padding: 38px 142px 0 0; }
+
+.navs {
+  position: relative;
+  display: inline-block;
+  color: #A0B3C0;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 37px 0 0 165px; }
+
+.navs a {
+  text-decoration: none;
+  color: #A0B3C0;
+  font-family: 'Open-sans', sans-serif; }
+
+.nav1 {
+  border-right: solid #A0B3C0 1px;
+  margin: 0 6px 0 0;
+  padding: 0 6px 0 0; }
+
+.nav2 {
+  border-right: solid #A0B3C0 1px;
+  margin: 0 5px 0 0;
+  padding: 0 6px 0 0; }
+
+.nav3 {
+  border-right: solid #A0B3C0 1px;
+  margin: 0 5px 0 0;
+  padding: 0 7px 0 0; }
