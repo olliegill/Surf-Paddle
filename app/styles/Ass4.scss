@@ -7,7 +7,7 @@ $overlay-blue: #046bb0;
 $primary-blue: #003353;
 $secondary-blue: #0069b6;
 $dark-grey: #5c6870;
-$light-grey: #a0b360;
+$light-grey: #A3B3BF;
 $small-border-color: #fafafa;
 $header-color: #fff;
 
@@ -26,13 +26,7 @@ $small-font-size: 12px;
   -moz-animation-duration: 2s;
 }
 
-@mixin overlay-fade($transition-property, $transition-time, $method) {
-  -webkit-transition: $transition-property $transition-time $method;
-  -moz-transition: $transition-property $transition-time $method;
-  -ms-transition: $transition-property $transition-time $method;
-  -o-transition: $transition-property $transition-time $method;
-  transition: $transition-property $transition-time $method;
-}
+
 
 body {
   margin: 0;
@@ -123,7 +117,7 @@ body {
 }
 
 .header-text {
-  font-size: $large-font-size *2-10;
+  font-size: $large-font-size +50;
   margin: 205px 0 0;
   font-weight: normal;
   letter-spacing: 0;
@@ -216,14 +210,15 @@ body {
     background-color: $overlay-blue;
     opacity: .5;
     z-index: 1;
-
-    div:hover {
-      background: 0;
-      border: 0;
-      @include overlay-fade(all, 1s ease-out);
-    }
   }
 }
+
+.old-man-small-div:hover {
+  background: 0;
+  border: 0;
+  transition-duration: 1s;
+    }
+
 
 .date {
   display: inline-block;
@@ -243,7 +238,7 @@ body {
 }
 
 .text1 {
-  font-family: $secondry-font;
+  font-family: $secondary-font;
   padding: 15px 0 0;
   line-height: 1.6;
   color: $dark-grey;
@@ -496,7 +491,7 @@ body {
 .about-this-ad {
   color: $light-grey;
   font-family: $secondary-font;
-  font-size: $small-fontsize +2;
+  font-size: $small-font-size +2;
   margin: 0 0 0 191px;
 
   :hover {
@@ -509,7 +504,7 @@ body {
 
 .sidebar-section-heading {
   font-family: $tertiary-font;
-  color: $seconddary-font;
+  color: $secondary-font;
   font-size: $small-font-size +6;
   margin: 46px 0 0;
 
@@ -575,7 +570,7 @@ body {
   z-index: 0;
   height: 330px;
 
-  :hover {
+  &:hover {
     background: none;
     opacity: 1;
     transition-duration: 1s;
